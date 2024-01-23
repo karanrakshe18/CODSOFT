@@ -1,0 +1,63 @@
+#include<iostream>
+using namespace std;
+double add(double a1,double b1);
+double sub(double c1,double d1);
+double mul(double e1,double f1);
+double div(double g1,double h1);
+int main()
+{
+
+
+	int n,x;
+	double a,b;
+	do
+	{
+	cout<<"Enter the 2 numbers: ";
+	cin>>a>>b;
+	cout<<"Enter the number of task which you want to perform ";
+	cout<<"\n1.Addition\n2.Subtraction\n3.Multiplication\n4.Division\n";
+	cin>>n;
+
+	switch(n)
+	{
+		case 1:cout<<"Addition is : "<<add(a,b);
+		break;
+		case 2:cout<<"Subtraction is : "<<sub(a,b);
+		break;
+		case 3:cout<<"Multiplication is : "<<mul(a,b);
+		break;
+		case 4:cout<<"Division is : "<<div(a,b);
+		break;
+		default:
+			cout<<"Invalid input ";
+			break;
+	}
+	cout<<"\nEnter 1 to continue and 0 to end: ";
+	cin>>x;
+	}while(x!=0);
+	return 0;
+}
+	double add(double a1,double b1)
+	{
+		double sum;
+		sum=a1+b1;
+		return sum;
+	}
+	double sub(double c1,double d1)
+	{
+		double sub;
+		sub=c1-d1;
+		return sub;
+	}
+	double mul(double e1,double f1)
+	{
+		double mul;
+		mul=e1*f1;
+		return mul;
+	}
+	double div(double g1,double h1)
+	{
+		double div;
+		div=g1/h1;
+		return div;
+	}
